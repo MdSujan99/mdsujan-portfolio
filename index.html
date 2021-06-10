@@ -32,29 +32,41 @@
             <article class="content-intro" >
                 <section class="intro-text">
                     <p>
-                        <h2 >Welcome to my page</h2>
-                        <p>My name is Md&nbsp;Sujan and <br> I love building beautiul websites</p>
+                        <h1>Welcome to my page</h1>
+                        <p>My name is Md&nbsp;Sujan and  I love building fun and beautiul websites <br> check out some of my projects below</p>
+
                     </p>
                 </section>
+                <section class="projects">
+                    <a href="https://mdsujan99.github.io/color-flipper/" target="_blank" style="background-image: url(./colorFlipper.png);background-size: 100% 100%;">Color Flipper</a>
+                    <a href="https://mdsujan99.github.io/simpleCalc/" target="_blank" style="background-image: url(./simplCalc.png);background-size: 100% 100%;">Simple Calc</a>
+                    <a href="https://mdsujan99.github.io/Signup-Form/" target="_blank" style="background-image: url(./signupForm.png);background-size: 100% 100%;">Signup Form</a>
+                    <a href="https://mdsujan99.github.io/p5jsPage/" target="_blank" style="background-image: url(./canvasPage.png);background-size: 100% 100%;">Canvas Page</a>
+                </section>
             </article>
+            
         </div>
-        <div class="content-container" id="about">
-            <article class="content-about">
-                <img id="card-dp" src="https://media-exp1.licdn.com/dms/image/C5103AQGGelW1Vn7c7g/profile-displayphoto-shrink_800_800/0/1535088766438?e=1628121600&v=beta&t=PBZTlZ16ZH0hW9ypDbnYwIiVR4h3WelglUHsE0pKl7s" width="200px" height="200px" alt="about-img">
-                <h2>About Me</h2>
-                <section class="about-card">
+        <div class="content-container about-container" id="about">
+            <article class="about-card">
+                <img class="card-dp" id="card-dp" src="https://cdn2.f-cdn.com/ppic/101749033/logo/25447348/NRiaA/profile_logo_.jpg" width="200px" height="200px" alt="about-img">
+                <div class="card-text">
                     <p>
-                    <h3>Name: MD SUJAN</h3>
-                    <h3>Email: khans8962@gmail.com</h3>
+                        <h3>Name: MD SUJAN</h3>
+                        <div class="divider-line"></div>
+                        <h3>Email: khans8962@gmail.com</h3>
+                        <div class="divider-line"></div>
                         <p>
+                            <h2 style="text-align: center;">About Me</h2>
+                            
                             I am pursuing Bachelors Degree in Computer Science from KS Institute of Technology, Bangalore, under the VTU.
                             My interest are : Programming, Web Development, Data Structure & Algorithms,etc. 
                         </p>
+                    
                     </p>
-                </section>
+                </div>
             </article>
         </div>
-        <div class="content-container" id="education">
+        <div class="content-container education-container" id="education">
             <article class="content-education" >
                 <h2>My Education</h2>
                 <img id='college-img' src="https://lh3.googleusercontent.com/proxy/S9iN4gRs53Oot2H4P41fByVaSdGyFYhJ7dTSM9uDozYlYj25VmlxlcXMYOkDBK684-8Pb6BsCTXN" alt="education-img" width="600px" height="700px">
@@ -66,16 +78,26 @@
                 </section>
             </article>
         </div>
-        <div class="content-container" id="contact-me">
+        <div class="content-container contact-container" id="contact-me">
             <article class="content content-contact">
-                <section class="contact-me-text">
+                <section class="contact-text">
                     <h2>Contact Me</h2>
-                    <p>Leave me a message! Lets get together and make something <sub>at least better than this page haha</sub></p>
+                    <br>
+                    <p>Leave me a message! <br> Lets get together and make something great.</p>
                 </section>
                 <form class='contact-form' action="https://sheetdb.io/api/v1/3r175nzh73ck4" method="POST" id='sheetdb-form'>
-                    <input type="text" name="data[name]" placeholder="Enter your name">
-                    Email<input type="text" name="data[email]" placeholder="Enter your email-id">
-                    Message<textarea type="text" name="data[message]" rows="8" cols="22" placeholder="please type your message here and I will get back to you asap!"></textarea>
+                    <div>
+                        <label for="name-input">Name</label>
+                        <input type="text" id="name-input" name="data[name]" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label for="email-input">Email</label>
+                        <input type="text" name="data[email]" id="email-input" placeholder="Enter your email-id">
+                    </div>
+                    <div>
+                        <label for="message-input">Message</label>
+                        <textarea type="text"  name="data[message]" id="message-input" rows="8" cols="25" placeholder="please type your message here and I will get back to you asap!"></textarea>
+                    </div>
                     <button type="submit">Submit</button>
                 </form>
                     <!-- script for the form-to-sheet  using sheetdb API-->
