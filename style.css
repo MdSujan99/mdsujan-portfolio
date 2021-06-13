@@ -4,7 +4,7 @@
     --color-light: rgb(255, 255, 255);;
 }
 *{
-    padding: 0;
+    padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -23,17 +23,15 @@ ul{
 body{
     font-family: 'Ubuntu', sans-serif;
 }
-
-textarea{
+/* textarea{
     font-size: 1rem;
-}
+} */
 
 img{
     color: red;
 }
-header{
+.header-container{
     position: fixed;
-    /* top: 0; */
     color: whitesmoke;
     height: 50px;
     width: 100%;
@@ -44,28 +42,29 @@ header{
     background-color: var(--color-darker);
     text-transform: uppercase;
 }
-.nav-toggle{
-    height: 50px;
-    width: 45px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-}
-.nav-toggle .bar1,.bar2,.bar3{
-    margin: 1px;
-    width: 100%;
-    height: 5px;
-    background-color: white;
-}
 .header-navbar{
-    height: 100%;
     width: 50%;
-    /* padding: 10px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.header-navbar a{
+    padding: 0px 10px;
+}
+
+.nav-toggle{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+.bar1, .bar2, .bar3{
+    width: 80%;
+    height: 3px;
+    background-color: white;
 }
 .current{
     border-bottom: 1px solid blue;
@@ -74,14 +73,14 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
 .content-container{
     height: 100vh;
     width: 100%;
-    padding: 50px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,27 +91,22 @@ main{
     background-image: url(./intro-img.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid black; */
 }
 .content-intro{
     background-color: rgba(255, 255, 255, 0.287);
-    width: 100%;
+    width: 90%;
     height: 90%;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-family: 'Odibee Sans', cursive;
     /* border: 1px solid black; */
 }
 .intro-text{
     /* border: 1px solid black; */
-    width: 100%;
+    width: 80%;
     height: 50%;
     font-size: 2.7rem;
     display: flex;
@@ -120,30 +114,29 @@ main{
     align-items: center;
     justify-content: center;
 }
-.projects{
+.projects-container{
     font-size: 1.7rem;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
     height: 50%;
     padding: 10px;
+    /* background-color: white; */
+
 }
-.projects a{
-    background-color: black;
+.projects{
+    background-color: white;
     color: white;
     text-shadow: 2px 2px black;
-    /* font-size: 1.7rem; */
-    
-    /* display: flex; */
-    /* flex-direction: column; */
-    width: 250px;
-    height: 150px;
+    width: 20%;
+    height: 60%;    
     border-radius: 15px;
     border: 10px solid rgba(68, 68, 68, 0.883);
-    padding-top: 50px;
     text-align: center;
 }
 .about-container{
@@ -259,7 +252,7 @@ main{
     justify-content: space-around;
     /* align-items: center; */
 }
-.contact-container{
+/* .contact-container{
     background-image: url("contact.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -271,7 +264,7 @@ main{
     height: 90%;
     border-radius: 12px;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.2);
@@ -279,8 +272,6 @@ main{
 }
 .contact-text{
     padding-top: 10%;
-    /* text-align: center; */
-    /* border: 1px solid red; */
     width: 50%;
     height: 80%;
     color: white;
@@ -288,7 +279,7 @@ main{
     
 }
 .contact-form{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     height: 90%;
     width: 40%;
     padding: 10px;
@@ -314,7 +305,7 @@ main{
     width: 80%;
     height: 10%;
     padding-left: 10px;
-    /* background-color: var(--color-light); */
+    background-color: var(--color-light);
     border-radius: 10px;
     border: 1px solid black;
 }
@@ -326,7 +317,7 @@ main{
 ::placeholder{
     font-size: 2rem;
     color: var(--color-darker);
-}
+} */
 
 footer{
     color: var(--color-light);
@@ -356,34 +347,44 @@ footer{
     width: 30%;
     font-size: .7rem;
 }
-@media screen and (max-width: 800px){
-    footer{
-        padding-top: 10px;
+@media screen and (max-width: 762px){
+    .header-container-vertical{
+        transition: 1s;
+        transition-timing-function: ease;
+        display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-    }   
-    .footer-navbar{
-        width: 100%;
-    }
-    .legal{
-        text-align: center;
-        width: 100%;
-        font-size: .7rem;
-    }
-}
-@media screen and (max-width: 800px){
-    .header-navbar{
-        width: 70%;
-    }
-}
-@media screen and (max-width: 440px){
-    .header-navbar{
-        display: none;
+        height: 50vh;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: aliceblue; */
     }
     .nav-toggle{
         display: flex;
     }
-    .footer-navbar{
-        width: 100%;
+    .header-navbar{
+        display: none;
+        
     }
+    .header-navbar-vertical{
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+    }
+    .intro-text{
+        font-size: 1.7rem;
+    }
+    
+    .projects-container{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 45% 45%;
+    }
+    .projects{
+        width: 100%;
+        height: 100%;    
+        border-radius: 15px;
+        border: 10px solid rgba(68, 68, 68, 0.883);
+        text-align: center;
+    }
+    
 }

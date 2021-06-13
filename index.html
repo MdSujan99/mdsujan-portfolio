@@ -10,17 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Md Sujan | Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="header-container" id="header-container-id"> 
         <a href="./index.html"><img class="logo" src="./logo.png" alt="logo"  width="36" height="auto"></a>
-        <div class="nav-toggle" onclick="navToggle(this)">
+        <div class="nav-toggle" onclick="toggleNav()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-        <nav class="header-navbar">
+        <nav class="header-navbar" id="header-navbar-id">
             <a href="#intro">Intro</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
@@ -37,11 +38,11 @@
 
                     </p>
                 </section>
-                <section class="projects">
-                    <a href="https://mdsujan99.github.io/color-flipper/" target="_blank" style="background-image: url(colorFlipper.png);background-size: 100% 100%;">Color Flipper</a>
-                    <a href="https://mdsujan99.github.io/simpleCalc/" target="_blank" style="background-image: url(simplCalc.png);background-size: 100% 100%;">Simple Calc</a>
-                    <a href="https://mdsujan99.github.io/Signup-Form/" target="_blank" style="background-image: url(signupForm.png);background-size: 100% 100%;">Signup Form</a>
-                    <a href="https://mdsujan99.github.io/p5jsPage/" target="_blank" style="background-image: url(canvasPage.png);background-size: 100% 100%;">Canvas Page</a>
+                <section class="projects-container">
+                    <a class="projects" href="https://mdsujan99.github.io/color-flipper/" target="_blank" style="background-image: url(colorFlipper.png);background-size: 100% 100%;">Color Flipper</a>
+                    <a class="projects" href="https://mdsujan99.github.io/simpleCalc/" target="_blank" style="background-image: url(simplCalc.png);background-size: 100% 100%;">Simple Calc</a>
+                    <a class="projects" href="https://mdsujan99.github.io/Signup-Form/" target="_blank" style="background-image: url(signupForm.png);background-size: 100% 100%;">Signup Form</a>
+                    <a class="projects" href="https://mdsujan99.github.io/p5jsPage/" target="_blank" style="background-image: url(canvasPage.png);background-size: 100% 100%;">Canvas Page</a>
                 </section>
             </article>
             
