@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
     <title>Md Sujan | Portfolio</title>
 </head>
 <body>
-    <header class="header-container" id="header-container-id"> 
-        <a href="./index.html"><img class="logo" src="./logo.png" alt="logo"  width="36" height="auto"></a>
+    <header id="myHeader"> 
+        <a id="homeLink" href="./index.html"><img class="logo" src="./images/logo.png" alt="logo"  width="36" height="auto"></a>
         <div class="nav-toggle" onclick="toggleNav()">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -38,29 +38,26 @@
                     </p>
                 </section>
                 <section class="projects-container">
-                    <a class="projects" href="https://mdsujan99.github.io/color-flipper/" target="_blank" style="background-image: url(colorFlipper.png);background-size: 100% 100%;">Color Flipper</a>
-                    <a class="projects" href="https://mdsujan99.github.io/simpleCalc/" target="_blank" style="background-image: url(simplCalc.png);background-size: 100% 100%;">Simple Calc</a>
-                    <a class="projects" href="https://mdsujan99.github.io/Signup-Form/" target="_blank" style="background-image: url(signupForm.png);background-size: 100% 100%;">Signup Form</a>
-                    <a class="projects" href="https://mdsujan99.github.io/p5jsPage/" target="_blank" style="background-image: url(canvasPage.png);background-size: 100% 100%;">Canvas Page</a>
+                    <a class="projects" href="https://mdsujan99.github.io/color-flipper/" target="_blank" style="background-image: url(images/colorFlipper.png);background-size: 100% 100%;">Color Flipper</a>
+                    <a class="projects" href="https://mdsujan99.github.io/simpleCalc/" target="_blank" style="background-image: url(images/simplCalc.png);background-size: 100% 100%;">Simple Calc</a>
+                    <a class="projects" href="https://mdsujan99.github.io/Signup-Form/" target="_blank" style="background-image: url(images/signupForm.png);background-size: 100% 100%;">Signup Form</a>
+                    <a class="projects" href="https://mdsujan99.github.io/p5jsPage/" target="_blank" style="background-image: url(images/canvasPage.png);background-size: 100% 100%;">Canvas Page</a>
                 </section>
             </article>
             
         </div>
         <div class="content-container about-container" id="about">
             <article class="about-card">
-                <img class="card-dp" id="card-dp" src="https://cdn2.f-cdn.com/ppic/101749033/logo/25447348/NRiaA/profile_logo_.jpg" width="30%" height="40%" alt="about-img">
+                <img class="card-dp" id="card-dp" src="./images/dp.jpg" height="500px" width="auto" alt="My Photo">
                 <div class="card-text">
                     <p>
-                        <h4>Name: MD SUJAN</h4>
+                        <h3>About Me</h3>
+                        <br>
+                        <h5>Name: MD SUJAN</h5>
                         <h4>Email: khans8962@gmail.com</h4>
                         <br>
-                        <p>
-                            <h3 style="text-align: center;">About Me</h3>
-                            
-                            I am pursuing Bachelors Degree in Computer Science from KS Institute of Technology, Bangalore, under the VTU.
-                            My interest are : Programming, Web Development, Data Structure & Algorithms,etc. 
-                        </p>
-                    
+                        I am pursuing Bachelors Degree in Computer Science from KS Institute of Technology, Bangalore, under the VTU.
+                        My interest are : Programming, Web Development, Data Structure & Algorithms,etc. 
                     </p>
                 </div>
             </article>
@@ -70,7 +67,7 @@
                 <h2>My Education</h2>
                 <article class="education-article">
                     <section class="education-card">
-                        <img class="education-card-img" src="college-degree.png" alt="college-degree" width="100px" height="55%">
+                        <img class="education-card-img" src="images/college-degree.png" alt="college-degree" width="100px" height="55%">
                         <div class="education-card-text">
                             <h2>College</h2>
                             <br>Institution: KSIT, Bangalore
@@ -80,7 +77,7 @@
                         </div>
                     </section>
                     <section class="education-card">
-                        <img class="education-card-img" src="school-life.jpeg" alt="school-life" width="100px" height="55%">
+                        <img class="education-card-img" src="/images/school-life.jpeg" alt="school-life" width="100px" height="55%">
                         <div class="education-card-text">
                             <h2>School</h2>
                             <br>The Frank Anthony Public School
@@ -90,22 +87,22 @@
                         </div>
                     </section>
                     <section class="education-card">
-                        <img class="education-card-img" src="online-certifications.jpg" alt="online-certifications" width="100px" height="55%">
+                        <img class="education-card-img" src="./images/online-certifications.jpg" alt="online-certifications" width="100px" height="55%">
                         <div class="education-card-text">
                             <h2>Online Certifications</h2>
                             <ul class="online-certifications">
                                 <li>
                                     <a href="https://www.dropbox.com/s/unluy74050e6vp2/CertificateOfCompletion_HTML%20Essential%20Training.pdf?dl=0">HTML Essential Training from linkedin</a>
-                                        <img src="https://img.icons8.com/fluent-systems-regular/48/000000/external-link-squared.png" width="28" height="28"/>
+                                        
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.hackerrank.com/certificates/6c9c33bdddd1">JavaScript (Basic) Certificatelinkedin</a>
-                                        <img src="https://img.icons8.com/fluent-systems-regular/48/000000/external-link-squared.png" width="28" height="28"/>
+                                        
                                     </a></li>
                                 <li>
                                     <a href="https://www.hackerrank.com/certificates/6c9c33bdddd1">JavaScript (Basic) Certificate From Hackerranklinkedin</a>
-                                        <img src="https://img.icons8.com/fluent-systems-regular/48/000000/external-link-squared.png" width="28" height="28"/>
+                                        
                                     </a></li>
                             </ul>
                         </div>
@@ -122,10 +119,19 @@
                     <p>Leave me a message! <br> Lets get together and make something great.</p>
                 </section>
                 <form class='contact-form' name="myContactForm" id='myForm'>
+                    <label for="name-input">
+                        Name
                     <input required type="text" id="name-input" name="name" placeholder="Enter your Name">
+                    </label>
+                    <label for="email-input">
+                        Email ID
                     <input required type="text" name="email" id="email-input" placeholder="Enter your Email ID">
-                    <textarea required type="text"  name="message" rows="10" cols="30" id="message-input"  
-                    placeholder="please type your message here and I will get back to you asap!"></textarea>
+                    </label>
+                    <label for="message-input">
+                        Message
+                        <input required type="text"  name="message" rows="10" cols="30" id="message-input"  
+                        placeholder="please type your message here and I will get back to you asap!">
+                    </label>
                     <button type="submit">Submit</button>
                 </form>
                     <script>
@@ -134,21 +140,10 @@
         </div>
     </main>
     <footer>
-        <nav class="footer-navbar">
-            <img class="logo" src="./logo.png" alt="logo" width="36" height="auto">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#contact-me">Contact</a>
-            <a target="_blank" href="https://www.github.com/mdsujan99"><img class="contact-links-img" src="https://img.icons8.com/color/48/000000/github--v1.png" width="36" height="36"/></a></li>
-            <a target="_blank" href="https://www.linkedin.com/in/md-sujan-189a24110"><img class="contact-links-img" src="https://img.icons8.com/nolan/64/linkedin-circled.png" width="36" height="36"/></a></li>
-        </nav>
-        <section class="legal">
-            <p>
-                made by: Md&nbsp;Sujan &copy;
-            </p>
-            <time datetime="2021-06-04T10:00">2021</time>
-        </section>
+    <p>
+        made by: Md&nbsp;Sujan &copy;
+    </p>
+    <time datetime="2021-06-04T10:00">2021</time>
     </footer>
 </body>
 </html>
