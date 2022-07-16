@@ -27,7 +27,7 @@ function validateForm(e) {
       Password: "4B72FCC06A5E507DC28494C71E1DD9FF7C82",
       To: "khans8962@gmail.com",
       From: "khans8962@gmail.com",
-      Subject: "Contact Form Message from" + formData.userEmail,
+      Subject: "Contact Form Message from  : " + formData.userEmail,
       Body: "Message:\n" + formData.userMessage,
     }).then((message) => alert(message));
     console.log(formData);
